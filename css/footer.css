@@ -1,0 +1,124 @@
+.footer {
+        background-color: #2e2f42;
+        padding: 100px 0;
+}
+
+.footer-text {
+        color: #f4f4fd;
+        max-width: 264px;
+}
+
+.footer-logo {
+        color: #f4f4fd;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1.33333;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+}
+
+.footer .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+}
+
+.icon-footer {
+        color: #f4f4fd;
+}
+
+.social-link-footer {
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #4d5ae5;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+        background-color: #31d0aa;
+}
+
+.social-list-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+}
+
+.footer-social-text {
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 16px;
+}
+
+.footer-info {
+        margin-right: 120px;
+}
+
+.footer-form {
+        margin-left: 83px;
+}
+
+.subscribe-row {
+        display: flex;
+        gap: 24px;
+}
+
+.footer-form-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        color: #fff;
+}
+
+.button-subscribe {
+        padding: 8px 24px;
+        max-width: 165px;
+        box-shadow: none;
+        background-color: #4d5ae5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+        background-color: #31d0aa;
+        box-shadow: none;
+}
+
+.subscribe-icon {
+        margin-left: 16px;
+}
+
+.subscribe-form-input {
+        width: 264px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 8px 16px;
+        background-color: transparent;
+        outline: transparent;
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: border-color;
+}
+
+.subscribe-form-input:focus {
+        border-color: #31d0aa;
+}
+
+.subscribe-form-input::placeholder {
+        color: #fff;
+}
