@@ -25,11 +25,17 @@
     transform: translateX(-50%) translateY(-50%);
     border-radius: 4px;
     padding: 72px 24px 24px;
-    max-width: 408px;
     min-height: 582px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     width: 100%;
+    max-width: 288px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+  }
 }
 
 .modal-button {
@@ -69,7 +75,7 @@
 .modal-text {
     font-weight: 500;
     color: #2e2f42;
-    width: 360px;
+    width: 100%;
     margin-bottom: 16px;
 }
 

@@ -41,6 +41,7 @@ img {
 }
 
 .container {
+    width: 100%;
     max-width: 320px;
     margin: 0 auto;
     padding: 16px;
@@ -96,6 +97,3 @@ p{
   }
 }
 
-.hide {
-    display: none !important;
-}
