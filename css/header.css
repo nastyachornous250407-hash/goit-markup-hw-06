@@ -45,6 +45,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0;
+    padding: 16px 0;
+}
+
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+  background-color: transparent;
 }
 
 .logo-accent {

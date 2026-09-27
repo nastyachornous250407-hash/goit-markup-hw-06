@@ -60,6 +60,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
         .footer .container {
                 margin: 0 auto;
+                max-width: 584px;
         }
 }
 
