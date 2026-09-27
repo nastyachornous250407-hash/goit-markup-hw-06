@@ -1,26 +1,73 @@
+.features {
+    padding: 96px 0;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+}
+
 .features-list-title {
-    font-weight: 500;
-    font-size: 20px;
-    color: #2e2f42;
-    line-height: 1.2;
     margin-bottom: 8px;
-  }  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+    color: #2e2f42;
+  }
+  
+ @media only screen and (min-width: 768px) {
+   .features-list-title {
+     text-align: left;
+   }
+ } 
+
+  @media only screen and (min-width: 1158px) {
+    .features-list-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+  }
   
   .features-list {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+    gap: 72px;
+    
+}
+
+@media only screen and (min-width: 768px) {
+  .features-list {
     flex-direction: row;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
 }
 
 .features-list-item {
+    width: 288px;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-list-item {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list-item {
     width: 264px;
+  }
 }
 
 
 .features-icon-list {
-    display: flex;
+    display: none;
         align-items: center;
         justify-content: center;
     border: 1px solid #8e8f99;
@@ -28,6 +75,22 @@
         background: #f4f4fd;
         height: 112px;
         margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-icon-list {
+    display: flex;
+  }
+}
+
+.features-list-text {
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list-text {
+    font-weight: 400;
+  }
 }
 
 

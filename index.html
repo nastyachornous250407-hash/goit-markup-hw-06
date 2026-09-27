@@ -26,6 +26,12 @@
         <a class="header-logo" href="./index.html">
           <span class="logo-accent">Web</span>Studio</a
         >
+        <button class="mobile-menu-button">
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
         <nav class="navigation">
           <ul class="navigation-list">
             <li>
@@ -138,9 +144,11 @@
             <li class="team-item">
               <img
                 class="team-image"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
+                loading="lazy"
               />
               <div class="container-team">
                 <h3 class="team-item-title">Mark Guerrero</h3>
@@ -182,9 +190,11 @@
             <li class="team-item">
               <img
                 class="team-image"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
+                loading="lazy"
               />
               <div class="container-team">
                 <h3 class="team-item-title">Tom Ford</h3>
@@ -226,9 +236,11 @@
             <li class="team-item">
               <img
                 class="team-image"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
+                loading="lazy"
               />
               <div class="container-team">
                 <h3 class="team-item-title">Camila Garcia</h3>
@@ -270,9 +282,11 @@
             <li class="team-item">
               <img
                 class="team-image"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
+                loading="lazy"
               />
               <div class="container-team">
                 <h3 class="team-item-title">Daniel Wilson</h3>
@@ -322,9 +336,14 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio.jpg    1x,
+                    ./images/portfolio@2x.jpg 2x
+                  "
+                  src="./images/portfolio.jpg"
                   alt="Banking App"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -341,9 +360,14 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio@2x-1.jpg 2x
+                  "
+                  src="./images/portfolio-1.jpg"
                   alt="Cashless Payment"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -360,9 +384,14 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio@2x-2.jpg 2x
+                  "
+                  src="./images/portfolio-2.jpg"
                   alt="Meditation App"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -379,9 +408,14 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio@2x-3.jpg 2x
+                  "
+                  src="./images/portfolio-3.jpg"
                   alt="Taxi Service"
                   width="360"
+                  loading="lazy"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -398,7 +432,11 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio@2x-4.jpg 2x
+                  "
+                  src="./images/portfolio-4.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -417,7 +455,11 @@
               <div class="portfolio-overlay">
                 <img
                   class="portfolio-item-image"
-                  src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio@2x-5.jpg 2x
+                  "
+                  src="./images/portfolio-5.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -506,7 +548,80 @@
       </div>
     </footer>
 
-    <div class="backdrop" id="modal">
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <button class="button-mobile-menu">
+          <svg class="button-mobile-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="navigation-mobile">
+          <ul class="navigation-list-mobile">
+            <li>
+              <a class="navigation-link-mobile active" href="#features"
+                >Features</a
+              >
+            </li>
+            <li><a class="navigation-link-mobile" href="#team">Team</a></li>
+            <li>
+              <a class="navigation-link-mobile" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-bottom">
+          <address>
+            <ul class="contacts-mobile">
+              <li>
+                <a
+                  class="contact-link-mobile active"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-link-mobile" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-list-footer social-list-mobile">
+            <li class="social-item-footer">
+              <a href="#" class="social-link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-footer">
+              <a href="#" class="social-link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-footer">
+              <a href="#" class="social-link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-footer">
+              <a href="#" class="social-link-footer">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop hide" id="modal">
       <div class="modal">
         <button type="button" class="modal-button" aria-label="close">
           <svg class="modal-button-icon" width="8" height="8">
